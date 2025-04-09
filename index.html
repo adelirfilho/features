@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern App</title>
+
+    <!-- Prerequisite testing -->
+
+    <style>
+        html:not(.features-ready) body {
+            opacity: 0;
+            visibility: hidden;
+        }
+        html.features-ready body {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=default/unsupported.html">
+    </noscript>
+
+    <script src="js/feature-check.js" defer></script>
+
+    <!-- End of prerequisite test -->
+
+</head>
+<body>
+    <h1>Modern App</h1>
+    <div class="content">
+        <p>Your browser supports all the necessary features!</p>
+    </div>
+</body>
+</html>
