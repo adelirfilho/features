@@ -71,7 +71,7 @@
     // (or the tests fail); redirect to the unsupported page.
     try {     
         if (!checkEssentialFeatures()) {
-            throw new Error('Recursos essenciais não disponíveis');
+            throw new Error('Essential features not available');
         }
 
         const [webpSupported, avifSupported] = await Promise.all([
